@@ -22,7 +22,7 @@ public class Employee
         
 		switchEmployees(e2,e1); 
 
-		  //GC [How many objects are eligible for GC]
+		 
 
 			System.out.println(e1.id);
 		    System.out.println(e2.id);
