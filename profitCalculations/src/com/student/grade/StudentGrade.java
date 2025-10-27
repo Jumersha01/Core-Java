@@ -1,6 +1,6 @@
 package com.student.grade;
 
-public class StudentGrade {
+ class StudentGrade {
   private Student student;
   private char studentGrade;
   
@@ -26,7 +26,7 @@ public class StudentGrade {
 
    @Override
    public String toString() {
-	return "The Student " + this.student.getName() + " has " + this.studentGrade+"Grade";
+	return "The Student " + this.student.getName() + " has " + this.studentGrade+" Grade";
    }
    
   

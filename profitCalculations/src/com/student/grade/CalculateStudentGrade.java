@@ -1,6 +1,6 @@
 package com.student.grade;
 
-public class CalculateStudentGrade {
+ class CalculateStudentGrade {
  public static StudentGrade calculateGrade(Student student) {
 	 int studentMark = student.getMarks();
 	 char grade=0;

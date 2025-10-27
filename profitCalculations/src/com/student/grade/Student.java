@@ -1,6 +1,6 @@
 package com.student.grade;
 
-public class Student {
+ class Student {
 	
 	private String  name;
 	private int marks;
