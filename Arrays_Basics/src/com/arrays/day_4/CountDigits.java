@@ -1,5 +1,4 @@
 package com.arrays.day_4;
-
 import java.util.*;
 public class CountDigits {
 
