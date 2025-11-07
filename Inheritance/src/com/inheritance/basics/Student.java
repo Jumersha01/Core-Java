@@ -42,6 +42,7 @@ class Science extends StudentDetails{
 public class Student {
      
 	public static void main(String[] args) {
+		//Taking the inputs of user
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("Enter the Student Name :");
