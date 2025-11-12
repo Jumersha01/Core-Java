@@ -28,7 +28,7 @@ class Developer extends Manager{
 
 	@Override
 	public String toString() {
-		return "Developer [name=" + super.name + ", id=" + this.id + ", salary=" + this.salary + "]";
+		return "Developer [name=" + super.name + ", id=" + super.id + ", salary=" + super.salary + "]";
 	}
 	
 	
