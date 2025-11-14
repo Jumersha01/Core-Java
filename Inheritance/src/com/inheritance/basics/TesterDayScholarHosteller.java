@@ -25,6 +25,7 @@ public class TesterDayScholarHosteller{
             System.out.println("Id Should be positive.");
             System.exit(0);
         }
+        // taking input
 double totalAmount=0;
         switch(choice){
             case 1 ->{
