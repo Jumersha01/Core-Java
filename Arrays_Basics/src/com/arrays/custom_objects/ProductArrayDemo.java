@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ProductArrayDemo {
 
 	public static void main(String[] args) {
+		//Taking the inputs of user
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("Enter the number of products: ");

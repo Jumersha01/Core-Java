@@ -3,7 +3,7 @@ package com.junaid.abstraction_classes;
 
 
 
-abstract  class Vehicle {
+abstract  class Vehicles {
     
 	public abstract void run();
 	public abstract void fuel();
@@ -13,7 +13,7 @@ abstract  class Vehicle {
 	
 }
 //car  class
-class Car  extends Vehicle{
+class Car  extends Vehicles{
 	public void run() {
 		System.out.println("Car is runnig");
 		
@@ -23,7 +23,7 @@ class Car  extends Vehicle{
 		System.out.println("Car consuming the deasel fuel");
 	}
 }
-class Bike extends Vehicle{
+class Bike extends Vehicles{
 	public void run() {
 		System.out.println("Bike is runnig");
 	}
@@ -32,5 +32,13 @@ class Bike extends Vehicle{
 		System.out.println("Bike is consuming petrol fuel");
 	}
 }
+public class Vehicle{
+public static void main (String [] args) {
+	Vehicles bike = new Bike();
+	bike.run();
+	bike.fuel();
+}
+}
+
 
 
