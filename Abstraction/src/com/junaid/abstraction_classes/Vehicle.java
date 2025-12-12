@@ -1,8 +1,5 @@
 package com.junaid.abstraction_classes;
 
-
-
-
 abstract  class Vehicles {
     
 	public abstract void run();
