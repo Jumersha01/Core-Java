@@ -35,6 +35,7 @@ public class CustomerComparator {
 		
 		IO.println("Sorting by using Customer name: ");
 		Comparator<Customer> cmp = (m1,m2)->m1.name().compareTo(m2.name());
+		
 		Arrays.sort(customer, cmp);
 		for(Customer m:customer) {
 			IO.println(m);
@@ -42,6 +43,7 @@ public class CustomerComparator {
 		
 		IO.println("Sorting by using Customer id: ");
 		cmp = ((m1,m2)->m1.id()-m2.id());
+		
 		Arrays.sort(customer, cmp);
 		for(Customer m:customer) {
 			IO.println(m);
