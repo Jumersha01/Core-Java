@@ -1,4 +1,4 @@
-package com.junaid.array_logicals;
+package com.junaid.string_logicals;
 
 public class ReverseWord {
 void main() {
