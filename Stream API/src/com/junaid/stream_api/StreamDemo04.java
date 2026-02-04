@@ -4,19 +4,19 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-record Employee(Integer id,String name,Double salary) {
+record Employ(Integer id,String name,Double salary) {
 	
 }
 
 public class StreamDemo04 {
 void main() {
 	//Fetch all employee name whose salary is greater than 50k and convert in list Object
-	 Employee e1= new Employee(101,"Junaid",90000D);
-	 Employee e2= new Employee(102,"Arshad",85000D);
-	 Employee e3= new Employee(103,"Sonu",50000D);
-	 Employee e4= new Employee(104,"Mannan",80000D);
-	 Employee e5= new Employee(105,"Arbaz",4000D);
-	 Employee e6= new Employee(106,"Aman",30000D);
+	 Employ e1= new Employ(101,"Junaid",90000D);
+	 Employ e2= new Employ(102,"Arshad",85000D);
+	 Employ e3= new Employ(103,"Sonu",50000D);
+	 Employ e4= new Employ(104,"Mannan",80000D);
+	 Employ e5= new Employ(105,"Arbaz",4000D);
+	 Employ e6= new Employ(106,"Aman",30000D);
 	 
 	  Stream.of(e1,e2,e3,e4,e5,e6).filter(emp->emp.salary()>50000).collect(Collectors.toList()).forEach(emp->IO.println(emp.name()));
 	 
