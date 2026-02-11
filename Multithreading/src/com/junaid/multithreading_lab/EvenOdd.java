@@ -1,5 +1,5 @@
 package com.junaid.multithreading_lab;
-
+//Re-Write the above program where even and odd numbers printing should be done by two different child threads (class name is EvenThread and OddThread, both are extending from Thread class). Here first of all even number should be printed then only odd numbers.
 class Odd extends Thread{
 	@Override
    public void run() {
@@ -40,9 +40,10 @@ public class EvenOdd {
 		Even evenThread =new Even();
 		
 		oddThread.start();
+		oddThread.join();
+		
 		evenThread.start();
 		
-		oddThread.join();
 		evenThread.join();
 		
 		
