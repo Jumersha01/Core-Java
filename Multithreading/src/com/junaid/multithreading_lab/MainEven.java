@@ -1,4 +1,5 @@
 package com.junaid.multithreading_lab;
+
 /*Assignment 01 :
 ---------------
 WAP in java to print odd and even numbers from 1-100 by using extends Thread class approach :
