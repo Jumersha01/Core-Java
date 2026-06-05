@@ -75,42 +75,33 @@ f) run() method implementation for RatingSystem class :
 =====================================================================================
  */
 
-
 package com.junaid.ola_riding_app;
 
 public class OlaRidingApp {
-	
-	 public static void main(String[] args) throws InterruptedException  {
-		 RideRequest  rideRequest = new  RideRequest();
-		 DriverAssignment driverAssignment = new DriverAssignment();
-		 FareCalculation fareCalculation = new FareCalculation();
-		 LiveTracking liveTracking = new  LiveTracking();
-		 PaymentProcessing paymentProcessing = new PaymentProcessing();
-		 RatingSystem ratingSystem  = new RatingSystem();
-		 
+
+	public static void main(String[] args) throws InterruptedException {
+		RideRequest rideRequest = new RideRequest();
+		DriverAssignment driverAssignment = new DriverAssignment();
+		FareCalculation fareCalculation = new FareCalculation();
+		LiveTracking liveTracking = new LiveTracking();
+		PaymentProcessing paymentProcessing = new PaymentProcessing();
+		RatingSystem ratingSystem = new RatingSystem();
+
 		rideRequest.start();
 		fareCalculation.start();
 		rideRequest.join();
-		
-		
-		
+
 		driverAssignment.start();
-	driverAssignment.join();
-		
+		driverAssignment.join();
+
 		liveTracking.start();
 		liveTracking.join();
-		
+
 		paymentProcessing.start();
 		paymentProcessing.join();
-		
-		 ratingSystem.start();
-		 ratingSystem .join();
-		
-		
-		
-		
-		
-	 
-	 
- }
+
+		ratingSystem.start();
+		ratingSystem.join();
+
+	}
 }
