@@ -1,5 +1,8 @@
 package com.junaid.multithreading;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 class Even implements Runnable{
     int arr[]= {1,2,3,4,5,6,7,8,9,10,11};
 	
@@ -44,10 +47,12 @@ public class EvenOdd {
 	public static void main(String[] args) {
 	   Even even  = new Even();
 	   Odd odd = new Odd();
-	   Thread t1 = new Thread(even);
-	   Thread t2 = new Thread(odd);
-	   t1.start();
-	   t2.start();
+	   
+	
+	  ExecutorService service = Executors.newFixedThreadPool(2);
+	  service.execute(odd);
+	  service.execute(even);
+	  service.shutdown();
 	   
 		
 	}
