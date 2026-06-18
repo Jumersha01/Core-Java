@@ -6,13 +6,15 @@ import java.util.Set;
 public class FoundDuplicates {
  void main() {
 	 String word ="Manersn";
+	 int count = word.toCharArray().length-1;
+	 
 	 for(int i =0;i<word.length()-1;i++) {
-		 int count = 1;
-		 if(word.charAt(i)==word.charAt(i+1)) {
-			 count++;
+		 int count1 = 0;
+		 if(word.charAt(i)==word.charAt(count--)) {
+			count1++; 
 		 }
-		 if(count>1) {
-			 System.out.println(word.charAt(i)+" : "+count);
+		 if(count1>=2) {
+			 System.out.println(word.charAt(i));
 		 }
 	 
 //	 Set<Character> seen = new HashSet<>();
