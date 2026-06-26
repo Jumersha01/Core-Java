@@ -21,7 +21,7 @@ public class WhereIsObject {
 			li.add("Hellow");
 			//System.out.println(s);
 		}
-		
+		//Added the comments
 
 		
           list.forEach(IO::println);
