@@ -19,9 +19,9 @@ public class WhereIsObject {
 
 			String s = li.next();
 			li.add("Hellow");
-			//System.out.println(s);
-		}
-		//Added the comments
+			
+		}//ading the comments
+		
 
 		
           list.forEach(IO::println);
